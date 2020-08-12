@@ -13,7 +13,7 @@ if(!isset($headers["Authorization"])) {
 
 $token = $headers["Authorization"];
 // Remove "Bearer " at first of TOKEN
-$token = substr($a, 7)); // strlen("Bearer ") = 7
+$token = substr($a, 7); // strlen("Bearer ") = 7
 
 try {
    $decode = JWT::decode($token, $key, array('HS256'));
