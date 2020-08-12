@@ -31,6 +31,12 @@ The claims in a JWT are encoded as a JSON object that is used as the payload of 
 - https://github.com/cdoco/php-jwt
 - https://tools.ietf.org/html/rfc7519
 
+If you are interested you may be interested to read more:
+
+- https://github.com/nov/jose-php
+- https://github.com/Spomky-Labs/jose
+- https://www.example-code.com/phpExt/jwe.asp
+
 ### Acknowledgment
 
 I prepared this sample for Mr. Kambiz. I hope it helps you too.
