@@ -23,6 +23,12 @@ composer require firebase/php-jwt
 - https://github.com/firebase/php-jwt
 - https://github.com/cdoco/php-jwt
 
+
+### Acknowledgment
+
+I prepared this sample for Mr. Kambiz. I hope it helps you too.
+Thanks to him for making me write this code.
+
 ---------
 
 # Max Base
