@@ -1,6 +1,6 @@
 # php-jwt-example
 
-This is an example of how to decode PWT generated tokens and encode tokens in PHP.
+This is an example of how to decode PWT generated tokens and encode tokens in PHP. (Also jwt bearer token)
 
 ## Installation
 
