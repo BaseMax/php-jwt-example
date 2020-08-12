@@ -14,4 +14,6 @@ print $decode."\n";
 $token='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcInN0YXR1c1wiOlwic3VjY2Vzc1wiLFwiZGF0YTFcIjpcInRlc3QxXCIsXCJkYXRhMlwiOlwidGVzdDJcIixcImRhdGEzXCI6XCJ0ZXN0M1wiLFwiZGF0YTRcIjpcInRlc3Q0XCIsXCJkYXRhNVwiOlwidGVzdDVcIn0i.lTHo7zbetlA2su017EVukpSzL1Zj60k7mEZZHxAlz7k';
 $decode = JWT::decode($token, $key, array('HS256'));
 print $decode."\n";
-print json_decode($decode)."\n";
+$object=json_decode($decode);
+print_r($object);
+print "\n";
