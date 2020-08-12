@@ -16,6 +16,13 @@ composer require firebase/php-jwt
 - Run Encode: `$ php encode.php`
 - Run Decode: `$ php decode.php`
 
+
+### Related pages
+
+- https://jwt.io/
+- https://github.com/firebase/php-jwt
+- https://github.com/cdoco/php-jwt
+
 ---------
 
 # Max Base
