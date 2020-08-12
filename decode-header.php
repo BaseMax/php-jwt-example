@@ -14,5 +14,9 @@ if(!isset($headers["Authorization"])) {
 $token = $headers["Authorization"];
 $token = str_replace("Bearer ", "", $token); // or remove 'Bearer ' from first of letters!
 
-$decode = JWT::decode($jwt, $key, array('HS256'));
-print $decode;
+try {
+   $decode = JWT::decode($token, $key, array('HS256'));
+   print $decode."\n";
+} catch (\Exception $e) {
+   print "Error!\n";
+}
