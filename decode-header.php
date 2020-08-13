@@ -17,7 +17,8 @@ $token = substr($a, 7); // strlen("Bearer ") = 7
 
 try {
    $decode = JWT::decode($token, $key, array('HS256'));
-   print $decode."\n";
+   print_r($decode);
+   print "\n";
 } catch (\Exception $e) {
    print "Error!\n";
 }
