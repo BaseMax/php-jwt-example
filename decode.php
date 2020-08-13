@@ -6,14 +6,6 @@ use \Firebase\JWT\SignatureInvalidException;
 $key = '83aeee518617ad6f3393bf0685e37d3e';
 
 // plain text
-$token='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IkhlbGxvLCBXb3JsZCEi.XYtTUc2xhYATDmvY0cDzCREb-uplZf03Rq1sMFhweA4';
-$decode = JWT::decode($token, $key, array('HS256'));
+$token='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.IkhlbGxvLCBXb3JsZCEi.evA2B8m545JM5epoHgmBIA_Qy6W3CMHcoHhR6LHFkHjmEPp7zDtIbZCqf3hTjZNfLNKghKSdNmfOF6sRMuXmIA';
+$decode = JWT::decode($token, $key, array('HS512'));
 print $decode."\n";
-
-// JSON
-$token='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcInN0YXR1c1wiOlwic3VjY2Vzc1wiLFwiZGF0YTFcIjpcInRlc3QxXCIsXCJkYXRhMlwiOlwidGVzdDJcIixcImRhdGEzXCI6XCJ0ZXN0M1wiLFwiZGF0YTRcIjpcInRlc3Q0XCIsXCJkYXRhNVwiOlwidGVzdDVcIn0i.lTHo7zbetlA2su017EVukpSzL1Zj60k7mEZZHxAlz7k';
-$decode = JWT::decode($token, $key, array('HS256'));
-print $decode."\n";
-$object=json_decode($decode);
-print_r($object);
-print "\n";
